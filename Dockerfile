@@ -1,5 +1,5 @@
 # Base image must at least have pytorch and CUDA installed.
-ARG BASE_IMAGE=nvcr.io/nvidia/pytorch:19.02-py3
+ARG BASE_IMAGE=nvcr.io/nvidia/pytorch:18.12-py3
 FROM $BASE_IMAGE
 
 RUN python --version
