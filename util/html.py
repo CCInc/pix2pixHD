@@ -14,6 +14,8 @@ class HTML:
             os.makedirs(self.img_dir)
 
         self.doc = dominate.document(title=title)
+        with doc.head:
+            style("img{filter:brightness(10);}")
         if refresh > 0:
             with self.doc.head:
                 meta(http_equiv="refresh", content=str(refresh))
